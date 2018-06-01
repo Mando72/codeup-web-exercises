@@ -1,4 +1,36 @@
 .fancy-header {
-    color: purple;
+    color: green;
     text-decoration: underline;
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color:forestgreen;
+    text-decoration: underline;
+}
+
+li {
+    color:lawngreen;
+}
+
+p {
+    text-wrap: normal;
+    color:lawngreen;
+    text-align: center;
+}
+td, th {
+    color:lawngreen;
+}
+
+body {
+    background-image: url("../img/black-hole.jpg") ;
+}
+
+a {
+    color:lawngreen;
+}
+table, tr, th, td {
+    border: 2px solid whitesmoke;
 }
