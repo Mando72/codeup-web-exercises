@@ -15,6 +15,15 @@ li {
     color:lawngreen;
 }
 
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    list-style: square;
+}
+
+
 p {
     text-wrap: normal;
     color:lawngreen;
@@ -32,5 +41,7 @@ a {
     color:lawngreen;
 }
 table, tr, th, td {
-    border: 2px solid whitesmoke;
+    border: 2px solid antiquewhite;
+    padding: 6px;
+
 }
