@@ -1,11 +1,22 @@
  body {
      margin: 20px;
      font-family: Helvetica;
+     position: relative;
  }
 
  h1 {
      text-align: center;
  }
+
+ img {
+     width: 100%;
+ }
+
+ i {
+     font-size: 2.5em;
+
+ }
+
  .alert-info a {
      background-color: rgb(204 255 254);
      display: block;
@@ -36,44 +47,82 @@
      font-style: italic;
  }
 
- img {
-     width: 100%;
+ #social-media-links {
+     float: right;
+
  }
+
+ #social-media-links {
+     margin-right: 10px;
+ }
+
+ i {
+     font-size: 2.5em;
+     color: grey;
+ }
+
+ footer {
+     height: 200px;
+ }
+
+ footer p {
+     float: left;
+ }
+
 
 
  @media screen and (min-width: 768px) {
-    .hidden-on-desktop {
-        display: none;
+
+     h1 {
+         float: left;
+
     }
- }
 
- body {
-     margin: 20px;
+     .hidden-on-desktop {
+        display: none;
+     }
 
- }
+ .nav-links {
+    float: right;
+     position: absolute;
+     margin: 0;
+     top: 40px;
+     right: 0;
+    }
 
- h1 {
-     float: left;
-
- }
  .nav-links li {
      display: inline-block;
      margin-left: 20px;
- }
+    }
 
  .nav-links li a {
      padding: 0;
+     background: inherit;
+     display: inline-block;
+     margin: 0;
 
- }
+    }
+
  section {
      padding: 0 10px;
      float: left;
- }
+    }
  .sub-section {
      width: 33.33%;
      box-sizing: border-box;
- }
+    }
  .main {
      width: 66.66%;
+     padding: 0;
+     padding-right: 2em;
+     box-sizing: border-box;
+    }
+
+ footer {
+     margin-top: 300px;
+    }
+
+
+
 
  }
