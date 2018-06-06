@@ -56,11 +56,11 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .one-half {width: 50%;}
+    .one-half {width: 50%}
     .one-third {width: 33.33%}
     .one-fourth {width: 25%}
     .one-eigth {width: 12.5%}
-    .one-half-offset:{
+    .one-half-offset {
         margin-left: 50%;
     }
 }
