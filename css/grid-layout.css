@@ -1,7 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
     border: 1px solid black;
+
 }
 
 body {
@@ -54,6 +53,14 @@ body {
     background-color: gainsboro;
 }
 
-@media screen and (max-width: 768px) {
 
+
+@media screen and (max-width: 768px) {
+    .one-half {width: 50%;}
+    .one-third {width: 33.33%}
+    .one-fourth {width: 25%}
+    .one-eigth {width: 12.5%}
+    .one-half-offset:{
+        margin-left: 50%;
+    }
 }
