@@ -9,7 +9,7 @@
  }
 
  img {
-     width: 100%;
+     /*width: 100%;*/
  }
 
  i {
@@ -108,11 +108,11 @@
      float: left;
     }
  .sub-section {
-     width: 33.33%;
+     /*width: 33.33%;*/
      box-sizing: border-box;
     }
  .main {
-     width: 66.66%;
+     /*width: 66.66%;*/
      padding: 0;
      padding-right: 2em;
      box-sizing: border-box;
