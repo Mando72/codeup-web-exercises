@@ -1,8 +1,32 @@
 .jumbotron {
-    box-sizing: border-box;
-    border: 1px solid black;
+    background-image: url("http://java.codeup.com/examples/bootstrap/pizza.png");
 }
 
 h1 {
     text-align: center;
 }
+
+h2  {
+}
+
+.badge  {
+    background-color: #848487;
+    color: white;
+
+}
+
+.form-control {
+
+}
+
+.card {
+    border: 1px solid black;
+}
+
+.display-4 {
+    opacity: 0.5;
+    width: 100%;
+    padding: 10px 0;
+    background-color: gainsboro;
+}
+
