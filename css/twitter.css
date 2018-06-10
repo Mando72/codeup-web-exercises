@@ -113,6 +113,8 @@ a {
 
     top: 250px;
 
+    margin-top: 136px;
+
 }
 
 .profile-details {
@@ -135,7 +137,7 @@ a {
 
 .container {
 
-    padding: 2em;
+    padding: 5em;
 
     width: 100%;
 
@@ -215,6 +217,7 @@ a {
     font-size: 1.3em;
 
     padding: 10px;
+    margin-top: 100px;
 
 }
 
