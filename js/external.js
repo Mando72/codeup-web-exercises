@@ -11,6 +11,8 @@ console.log('Blue is my favorite color.: ' + userInput);
 
 alert("Blue is also my favorite color also.");
 
+
+
 var googleHourlyRateDollars = prompt('What is your hourly rate at google?:');
 alert('400');
 
@@ -28,5 +30,3 @@ var facebookHours = prompt('How many hours did you work facebook?:');
 alert('10');
 var totalPayment = prompt('What is your total payment?:');
 alert('$7,420');
-
-
