@@ -145,7 +145,8 @@ function applyDiscount(originalPrice, discountPercent){
 
 }
 console.log(applyDiscount(100, 12));
-console.log()
+console.log(applyDiscount(45.99, 12));
+console.log(applyDiscount(40.4712, 15));
 
 
 
