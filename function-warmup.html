@@ -6,19 +6,24 @@
 </head>
 <body>
 <script>
-    function makeUsername(firstName, age){
 
-        var userName = firstName.length + firstName.charAt(0).toLowerCase() + age;
-
-        return userName ;
-
-    }
-
-    console.log(makeUsername("Mando", 45));
+    // (function() {
 
 
+        "use strict";
+
+        function makeUsername(firstName, age) {
+
+            var userName = firstName.length + firstName.charAt(0).toLowerCase() + age;
+
+            return userName;
+
+        }
+
+        console.log(makeUsername("Mando", 45));
 
 
+    // })();
 </script>
 </body>
 </html>
