@@ -4,13 +4,26 @@
 
 var allCones = Math.floor(Math.random() * 50) + 50;
 
-var i = 50;
 
 do {
 
-    console.log(Math.floor(Math.random() * 50) + 50);
+    console.log("Start of the day I have  " +  allCones  +   " left");
 
-    console.log("cones to sell.");
+    var conesToSell = Math.floor(Math.random() * 5) + 1;
+
+    if(conesToSell <= allCones){
+
+        console.log("I sold " + conesToSell);
+        allCones = allCones - conesToSell;
+
+    }else if (allCones === 0) {
+        console.log("I can go home");
+
+    }else{
+
+        console.log("I don\'t have " +conesToSell+" cones to sell");
+
+    }
 
 }
-while (i > 50 && i < 100);
+while (allCones !== 0);
