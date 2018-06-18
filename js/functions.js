@@ -94,17 +94,17 @@ console.log(isTwo(random));
 //  * > calculateTip(0.15, 33.42) // returns 5.013
 //  */
 //
-function calculateTip(tipPercentage, billTotal) {
-
-    var tipInValue = tipPercentage / 100;//0.2
-    return billTotal * tipInValue;
-}
-
-   console.log(calculateTip(20, 100));
-   console.log(calculateTip(20, 20));
-   console.log(calculateTip(25, 25.5));
-   console.log(calculateTip(15, 33.42));
+// function calculateTip(tipPercentage, billTotal) {
 //
+//     var tipInValue = tipPercentage / 100;//0.2
+//     return billTotal * tipInValue;
+// }
+//
+//    console.log(calculateTip(20, 100));
+//    console.log(calculateTip(20, 20));
+//    console.log(calculateTip(25, 25.5));
+//    console.log(calculateTip(15, 33.42));
+// //
 //
 // /**
 //  * TODO:
@@ -137,21 +137,44 @@ function calculateTip(tipPercentage, billTotal) {
 //  * > applyDiscount(45.99, 0.12) // 40.4712
 //  */
 //
+// //
+// function applyDiscount(originalPrice, discountPercent){
+//     var discount = discountPercent / 100;//.12
+//     var discountVal = originalPrice * discount;
+//     return originalPrice - discountVal;
 //
-function applyDiscount(originalPrice, discountPercent){
-    var discount = discountPercent / 100;//.12
-    var discountVal = originalPrice * discount;
-    return originalPrice - discountVal;
-
-}
-console.log(applyDiscount(100, 12));
-console.log(applyDiscount(45.99, 12));
-console.log(applyDiscount(40.4712, 15));
+// }
+// console.log(applyDiscount(100, 12));
+// console.log(applyDiscount(45.99, 12));
+// console.log(applyDiscount(40.4712, 15));
 
 
 
 
 
+//
+// ### Create a calculator fx
+//
+// - Create a calculator function that takes 4 parameters, the first one is a number,
+// the second is an operator string literal, the third it's another number and the fourth
+// will determine the number of decimals the result should be rounded.
+// The following operator symbols are valid in your function:
+//
+//     ```
+// 'add' = +
+// 'sub' = -
+// 'mul' = *
+// 'div' = /
+// 'mod' = % (This should give you the modulus from param 1 % param 2)
+// 'neg' = ¬
+// 'sqr' = √ (This should give you the square root of each parameter number)
+// ```
+//
+// - Make sure you handle invalid operators and show an error message.
 
 
+
+
+
+function calculator(number1, stringliteral, number2, decimals){
 
