@@ -12,11 +12,11 @@
 //  * > sayHello("codeup") // returns "Hello, codeup!"
 //  */
 
-function sayHello(Mando) {
-    return 'Hello ' + Mando;
+function sayHello(mando) {
+    return 'Hello ' + mando;
 }
-
-console.log(sayHello('Mando'));
+var mando = prompt('what\'s your name?');
+console.log(sayHello('mando'));
 //
 //
 //
@@ -31,7 +31,7 @@ console.log(sayHello('Mando'));
 //  * console.log 'helloMessage' to check your work
 //  */
 //
-var  helloMessage = sayHello('Hello Mando');
+var  helloMessage = sayHello('mando');
     console.log(helloMessage);
 
 // /**
@@ -41,14 +41,14 @@ var  helloMessage = sayHello('Hello Mando');
 //  * console.
 //  */
 
-var myName = 'Mando';
+var myName = 'mando';
 
 console.log(sayHello(myName));
 //
 //
 // // Don't modify the following line, it generates a random number between 1 and 3
 // // and stores it in a variable named random
-// var random = Math.floor((Math.random() * 3) + 1);
+var random = Math.floor((Math.random() * 3) + 1);
 //
 // /**
 //  * TODO:
@@ -93,17 +93,17 @@ console.log(isTwo(random));
 //  * > calculateTip(0.25, 25.50) // returns 6.37
 //  * > calculateTip(0.15, 33.42) // returns 5.013
 //  */
-//
-// function calculateTip(tipPercentage, billTotal) {
-//
-//     var tipInValue = tipPercentage / 100;//0.2
-//     return billTotal * tipInValue;
-// }
-//
-//    console.log(calculateTip(20, 100));
-//    console.log(calculateTip(20, 20));
-//    console.log(calculateTip(25, 25.5));
-//    console.log(calculateTip(15, 33.42));
+
+function calculateTip(tipPercentage, billTotal) {
+
+    var tipInValue = tipPercentage / 100;//0.2
+    return billTotal * tipInValue;
+}
+
+   console.log(calculateTip(20, 100));
+   console.log(calculateTip(20, 20));
+   console.log(calculateTip(25, 25.5));
+   console.log(calculateTip(15, 33.42));
 // //
 //
 // /**
@@ -113,7 +113,7 @@ console.log(isTwo(random));
 //  * then display the dollar amount they should tip
 //  */
 //
-// // calculateTip(prompt('Give me the tip %'), prompt('Give me the bill total'));
+    console.log(calculateTip(prompt('Give me the tip %'), prompt('Give me the total bill')));
 //
 //
 //
@@ -138,15 +138,15 @@ console.log(isTwo(random));
 //  */
 //
 // //
-// function applyDiscount(originalPrice, discountPercent){
-//     var discount = discountPercent / 100;//.12
-//     var discountVal = originalPrice * discount;
-//     return originalPrice - discountVal;
-//
-// }
-// console.log(applyDiscount(100, 12));
-// console.log(applyDiscount(45.99, 12));
-// console.log(applyDiscount(40.4712, 15));
+function applyDiscount(originalPrice, discountPercent){
+    var discount = discountPercent / 100;//.12
+    var discountVal = originalPrice * discount;
+    return originalPrice - discountVal;
+
+}
+console.log(applyDiscount(100, 12));
+console.log(applyDiscount(45.99, 12));
+
 
 
 
@@ -175,6 +175,4 @@ console.log(isTwo(random));
 
 
 
-
-function calculator(number1, stringliteral, number2, decimals){
 
