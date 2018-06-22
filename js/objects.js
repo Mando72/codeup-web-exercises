@@ -11,12 +11,12 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-    var person = {};
-
-    person.firstName = "Mando";
-    person.lastName = "Sifuentes";
-    console.log(person.firstName);
-    console.log(person.lastName);
+    // var person = {};
+    //
+    // person.firstName = "Mando";
+    // person.lastName = "Sifuentes";
+    // console.log(person.firstName);
+    // console.log(person.lastName);
 
 
 
@@ -32,15 +32,15 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    var person = {};
-    person.firstName = "Mando";
-    person.lastName = "Sifuentes!";
-
-    person.sayHello = function(){
-        return "Hello from  " + person.firstName + " "+ person.lastName;
-    }
-
-    console.log(person.sayHello());
+    // var person = {};
+    // person.firstName = "Mando";
+    // person.lastName = "Sifuentes!";
+    //
+    // person.sayHello = function(){
+    //     return "Hello from  " + this.firstName + " "+ this.lastName;
+    // }
+    //
+    // console.log(person.sayHello());
 
 
 
@@ -66,9 +66,16 @@
         {name: 'George', amount: 320}
     ];
 
-    shoppers.forEach(function(shoppers){
+    shoppers.forEach(
 
-        console.log(shoppers);
+        function(shopper){
+var output = shopper.name;
+
+
+
+
+
+        console.log(shopper.name);
 
     });
 
