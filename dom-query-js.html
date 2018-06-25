@@ -7,7 +7,9 @@
 </head>
 <body>
 
-<h1 id="mainheader">Hello World!</h1>
+
+
+<h1 id="main-header">Hello World!</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -15,7 +17,7 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
-<h2 id="subheader">Hello Again.</h2>
+<h2 id="sub-header">Hello Again.</h2>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -26,48 +28,115 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+
+<button id="btn1">Click</button>
+<button id="btn2">Click</button>
+<button id="btn3">Click</button>
+<button id="btn4">Click</button>
+
+
+
+
+
 <script>
-    (function() {
+    (function (){
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        var mainHeader = document.getElementById('mainheader');
-            console.log(mainheader);
+        var mainHeader = document.getElementById('main-header');
+
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        var mainHeader = document.getElementById('mainheader');
-            console.log(mainheader.innerHTML);
-            mainheader.innerHTML = 'Javascript is cool!';
-            console.log(mainheader.innerHTML);
+
+        mainHeader.innerHTML = 'Javascript is cool!';
+
 
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById('subheader');
-        console.log(subheader);
+        var subHeader = document.getElementById('sub-header');
 
 
         // TODO: Set the text color of subHeader to blue
-        var subHeader = document.getElementById('subheader');
+
         subHeader.style.color = 'blue';
 
 
         // TODO: Uncomment the next line and get all list items
+
         var listItems = document.getElementsByTagName('li');
 
-        for (var i = 0; i < listItems.length; i++) {
-            var datadbid = listItems[i].getAttribute('data-dbid');
-            console.log(datadbid);
-        }
 
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
 
+        listItems[0].style.color = 'blue';
 
+        for (var i = 0; i < listItems.length; i += 1) {
+            if (listItems[i].getAttribute('data-dbid') === '1') {
+                listItems[i].style.color = 'blue';
+            } else if (i % 2 === 0) {
+                listItems[i].style.color = 'grey';
+            }
+
+        }
 
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        // var subParagraphs = ;
+        var subParagraphs = document.getElementsByClassName('sub-paragraph');
+
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-    })();
+
+        subParagraphs[0].innerHTML = '<strong>Mission Accomplished!</strong>';
+
+        document.getElementById('btn1').addEventListener('click', function () {
+            var mainHeader = document.getElementById('main-header');
+
+            mainHeader.innerHTML = 'Javascript is cool!'
+        ));
+        }
+
+            console.log('btn1');
+
+
+            document.getElementById('btn2').addEventListener('click'), function () {
+                var subHeader = document.getElementById('sub-header');
+
+                subHeader.style.color = 'blue';
+
+            }
+            console.log('btn2');
+
+
+            document.getElementById('btn3').addEventListener('click'), function () {
+                var listItems = document.getElementsByTagName('li');
+            }
+
+            console.log('btn3');
+
+
+            document.getElementById('btn4').addEventListener('click'), function () {
+                listItems[0].style.color = 'blue';
+
+
+                for (var i = 0; i < listItems.length; i += 1) {
+                    if (listItems[i].getAttribute('data-dbid') === '1') {
+                        listItems[i].style.color = 'blue';
+                    } else if (i % 2 === 0) {
+                        listItems[i].style.color = 'grey';
+
+                    }
+                }
+
+            }
+                console.log('btn4');
+
+
+
+
+            });
+
+
+
+
 </script>
 </body>
 </html>
