@@ -91,29 +91,29 @@
             var mainHeader = document.getElementById('main-header');
 
             mainHeader.innerHTML = 'Javascript is cool!'
-        ));
-        }
+
+        });
 
             console.log('btn1');
 
 
-            document.getElementById('btn2').addEventListener('click'), function () {
+            document.getElementById('btn2').addEventListener('click', function () {
                 var subHeader = document.getElementById('sub-header');
 
                 subHeader.style.color = 'blue';
 
-            }
+            });
             console.log('btn2');
 
 
-            document.getElementById('btn3').addEventListener('click'), function () {
+            document.getElementById('btn3').addEventListener('click', function () {
                 var listItems = document.getElementsByTagName('li');
-            }
+            });
 
             console.log('btn3');
 
 
-            document.getElementById('btn4').addEventListener('click'), function () {
+            document.getElementById('btn4').addEventListener('click', function () {
                 listItems[0].style.color = 'blue';
 
 
@@ -126,17 +126,10 @@
                     }
                 }
 
-            }
+            });
                 console.log('btn4');
 
-
-
-
-            });
-
-
-
-
+            })();
 </script>
 </body>
 </html>
