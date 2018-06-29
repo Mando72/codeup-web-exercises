@@ -5,7 +5,16 @@
          $('#playOutput').text($('playInput').val());
      });
 
-     $('.importante').on('mouseover', function () {
-         $(this).css('background-color', 'yellow');
-     })
- })
+     $('.codeup').css('border', '1px solid red');
+
+     });
+
+
+
+
+
+// $('li').css('font-size', '20px').css('background-color', 'aqua');
+// $('p').css('background-color', 'salmon');
+$('*').css('background-color', 'orange');
+
+
