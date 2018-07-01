@@ -8,15 +8,33 @@
 
 
 
- 
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
+
     "use strict";
+    var code = [38,38,40,40,37,39,37,39,66,65,13];
+    var count = 0;
+
 
     $(document).keyup(function(event){
-        console.log(event.keyCode);
+        if(count == code.length-1 && event.keyCode == 13){
+            alert("30 Lives added");
+            $('body').css('background-color', 'blue');
+
+        }
+
+        if(event.keyCode == code[count]){
+           count++
+
+        }
+        else {
+            count = 0
+
+    }
     });
+
 </script>
 
 
