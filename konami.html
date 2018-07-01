@@ -6,17 +6,16 @@
 <body>
 <h1>Konami Code</h1>
 
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
 
     "use strict";
+    //every time a key is entered, we check if it matches the key in the code array,
+    // based on the count. The first time, the count is at 0,
+    // so their entry should match the first item in the array.
+
     var code = [38,38,40,40,37,39,37,39,66,65,13];
     var count = 0;
-
 
     $(document).keyup(function(event){
         if(count == code.length-1 && event.keyCode == 13){
@@ -25,16 +24,23 @@
             $('body').html()
 
         }
+        // If it's correct, we will increment the count by 1,
+        // so the next key they hit should match the second item in the array code[1].
 
         if(event.keyCode == code[count]){
            count++
 
         }
+        // If they enter the wrong key, we will reset the count back to zero
+
         else {
             count = 0
 
     }
     });
+
+
+
 
 </script>
 
