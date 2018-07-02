@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/jquery.css">
+
+</head>
+
+<body>
+
+        <h1>National Parks Facts!</h1><a href="" id="details">Toggle Details</a>
+
+
+
+    <dl>
+        <dt class="invisible">Big Bend National Park</dt>
+        <dd class="invisible">The Rio Grande River runs through Big Bend National Park.</dd>
+
+        <dt class="invisible">Yellow Stone National Park</dt>
+        <dd class="invisible">The number of visitors to Yellowstone National Park in 2015 was about 4 million.</dd>
+
+        <dt class="invisible">Zion National Park</dt>
+        <dd class="invisible">Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River</dd>
+
+        <dt class="invisible">Yosemite National Park</dt>
+        <dd class="invisible">Attacks are rare, and no one has been killed or seriously injured by a black bear in Yosemite. </dd>
+
+        <dt class="invisible">Sequoia National Park</dt>
+        <dd class="invisible">Sequoia National Park is adjacent to Kings Canyon National Park in California's southern Sierra Nevada mountains.</dd>
+
+        <dt class="invisible">Glacier National Park</dt>
+        <dd class="invisible">Glacier has numerous hiking trails and abundant fauna.</dd>
+
+        <dt class="invisible">Grand Teton National Park</dt>
+        <dd class="invisible">Grand Teton National Park is 45 miles long, half as wide, and spread across 309,944 acres.</dd>
+
+        <dt class="invisible">Badlands National Park</dt>
+        <dd class="invisible">Badlands National Park is in South Dakota. Its dramatic landscapes span layered rock formations, steep canyons and towering spires.</dd>
+
+        <dt class="invisible">Great Sand Dunes National Park</dt>
+        <dd class="invisible">Great Sand Dunes National Park and Preserve is in southern Colorado.</dd>
+
+        <dt class="invisible">Acadia National Park</dt>
+        <dd class="invisible">Acadia National Park is a 47,000-acre Atlantic coast recreation area primarily on Maine's Mount Desert Island.</dd>
+
+    </dl>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+$(function(){
+
+        $('details').click(function () {
+            // event.preventDefault();
+            $('dd').toggleClass('invisible');
+        });
+
+        $('dt').click(function(){
+            $(this).toggleClass('highlighted');
+
+        });
+
+        $('dd').click(function(){
+            $(this).next().toggleClass('cursive');
+
+        })
+
+        $()
+
+
+    })
+
+
+    </script>
+
+</body>
+</html>
