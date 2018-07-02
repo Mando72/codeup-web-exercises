@@ -2,9 +2,14 @@
 <html>
 <head>
     <title>Konami Code</title>
+    <link rel="stylesheet" href="css/konami.css">
 </head>
+
 <body>
+
 <h1>Konami Code</h1>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
@@ -21,7 +26,6 @@
         if(count == code.length-1 && event.keyCode == 13){
             alert("30 Lives added");
             $('body').css('background-color', 'blue');
-            $('body').html()
 
         }
         // If it's correct, we will increment the count by 1,
@@ -38,11 +42,8 @@
 
     }
     });
-
-
-
-
 </script>
+
 
 
 </body>
