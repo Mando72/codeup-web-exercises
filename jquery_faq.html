@@ -9,70 +9,85 @@
 
 <body>
 
-        <h1>National Parks Facts!</h1><a href="" id="details">Toggle Details</a>
+        <h1>National Parks Facts!</h1><button id="button">Toggle</button>
 
+        <h3>Denali National Park and Reserve</h3>
 
+        <ul class="selected">
+            <li id="aa">Its elevation of 20,310 feet (6,190.5 m) makes it the highest mountain in North America.</li>
+            <li class="bb">Denali National Park and Preserve encompasses 6 million acres of Alaska’s interior wilderness.</li>
+            <li class="cc">Its centerpiece is 20,310-ft.-high Denali (fka Mount McKinley), North America’s tallest peak.</li>
+            <li class="dd">With terrain of tundra, spruce forest and glaciers, the park is home to wildlife including grizzly bears,
+                wolves, moose, caribou and Dall sheep.</li>
+        </ul>
 
-    <dl>
-        <dt class="invisible">Big Bend National Park</dt>
-        <dd class="invisible">The Rio Grande River runs through Big Bend National Park.</dd>
+        <h3 class="bb">Redwood National and State Park</h3>
 
-        <dt class="invisible">Yellow Stone National Park</dt>
-        <dd class="invisible">The number of visitors to Yellowstone National Park in 2015 was about 4 million.</dd>
+        <ul class="selected">
+            <li class="ee">Redwood National and State Parks are a string of protected forests, beaches and grasslands along Northern California’s coast.</li>
+            <li class="ff">Jedediah Smith Redwoods State Park has trails through dense old-growth woods. </li>
+            <li class="gg">Prairie Creek Redwoods State Park is home to Fern Canyon, with its high, plant-covered walls. </li>
+            <li class="hh">Roosevelt elk frequent nearby Elk Prairie. Giant redwood clusters include Redwood National Park’s Lady Bird Johnson Grove.</li>
+        </ul>
 
-        <dt class="invisible">Zion National Park</dt>
-        <dd class="invisible">Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River</dd>
+        <h3>Hawai'i Volcanoes National Park</h3>
 
-        <dt class="invisible">Yosemite National Park</dt>
-        <dd class="invisible">Attacks are rare, and no one has been killed or seriously injured by a black bear in Yosemite. </dd>
-
-        <dt class="invisible">Sequoia National Park</dt>
-        <dd class="invisible">Sequoia National Park is adjacent to Kings Canyon National Park in California's southern Sierra Nevada mountains.</dd>
-
-        <dt class="invisible">Glacier National Park</dt>
-        <dd class="invisible">Glacier has numerous hiking trails and abundant fauna.</dd>
-
-        <dt class="invisible">Grand Teton National Park</dt>
-        <dd class="invisible">Grand Teton National Park is 45 miles long, half as wide, and spread across 309,944 acres.</dd>
-
-        <dt class="invisible">Badlands National Park</dt>
-        <dd class="invisible">Badlands National Park is in South Dakota. Its dramatic landscapes span layered rock formations, steep canyons and towering spires.</dd>
-
-        <dt class="invisible">Great Sand Dunes National Park</dt>
-        <dd class="invisible">Great Sand Dunes National Park and Preserve is in southern Colorado.</dd>
-
-        <dt class="invisible">Acadia National Park</dt>
-        <dd class="invisible">Acadia National Park is a 47,000-acre Atlantic coast recreation area primarily on Maine's Mount Desert Island.</dd>
-
-    </dl>
+        <ul class="selected">
+            <li class="ii">Hawaii Volcanoes National Park is on Hawaii Island (the Big Island).</li>
+            <li class="jj">The Crater Rim Drive passes steam vents and the Jaggar Museum, which features volcanology
+                exhibits and a viewpoint overlooking Halema'uma'u Crater. </li>
+            <li class="kk">Thick ferns mark the entrance to the Thurston Lava Tube (Nāhuku).</li>
+            <li class="mm">Trails crisscross the park.</li>
+        </ul>
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
-$(function(){
-
-        $('details').click(function () {
-            // event.preventDefault();
-            $('dd').toggleClass('invisible');
+$(function() {
+    $('#button').click(function(){
+        $('ul').each(function(){
+            $(this).children().last().toggleClass('bgy');
         });
+    });
 
-        $('dt').click(function(){
-            $(this).toggleClass('highlighted');
+    $('h3').click(function(){
+        $(this).next().toggleClass('bold');
+    });
 
-        });
+    $('li').click(function(){
+        $(this).parent().children().first().toggleClass('blue');
 
-        $('dd').click(function(){
-            $(this).next().toggleClass('cursive');
-
-        })
-
-        $()
+    });
 
 
-    })
-
-
+})
     </script>
 
 </body>
+<!--Open the file named jquery_faq.html for editing. Commit all changes to GitHub.-->
+
+<!--Under the FAQ, add 3 unordered lists like above.
+Each list should contain a national park name in an h3 element,
+and a ul of 4 facts about the park.-->
+
+<!--Create a button that, when clicked, makes the last li in each ul have a yellow background.-->
+
+<!--When any h3 is clicked, the lis underneath it should be bolded.
+Use font-weight: bold to achieve this.-->
+
+<!--When any list item is clicked, first li of the parent ul should have a font color of blue.-->
+
+<!--Bonus-->
+<!--Create 3 divs that each look like a picture Frame;
+each one should have a unique background image and a button underneath that swaps the image from the frame.
+Use Traversing functions of jQuery to accomplish this.-->
+
+<!--The rules are the following:-->
+
+<!--The left frame swaps to the right and takes the image from the frame in the center.-->
+<!--The center frame swaps randomly to either the left or right.-->
+<!--The right frame swaps to the left and takes the image from the frame in the center.-->
+
+
 </html>
+

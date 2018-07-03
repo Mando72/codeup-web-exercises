@@ -1,7 +1,15 @@
-.invisible {
-    display: none;
+
+
+
+
+.bgy {
+    background-color: yellow;
 }
 
-dd {
-    background-color: antiquewhite;
+.bold {
+    font-weight: bold;
+}
+
+.blue {
+    color: blue;
 }
