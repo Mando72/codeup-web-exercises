@@ -16,7 +16,22 @@
  * Can you refactor your code to use functions?
  */
 
+function myFunction()
+{
+    if(confirm("Confirm"))
+    {
+        var numberEntered = "";
+        numberEntered = prompt("Please enter your number!");
 
+        if(!isNaN(numberEntered))
+        {
+            alert("test   \n  test");
+        }
+
+    }
+
+
+}
 
 
 
@@ -46,15 +61,15 @@
 
 // function analyzeColor(color){
 //
-//     // if(color === 'blue'){
-//     //     return color + ' is the color of the sky';
-//     // } else  if (color === 'red') {
-//     //     return 'Strawberries are ' + color;
-//     // } else if(color == 'cyan'){
-//     //     return 'I don\'t know anything about ' + color;
-//     // } else {
-//     //     return color + ' not a valid color';
-//     // }
+//     if(color === 'blue'){
+//         return color + ' is the color of the sky';
+//     } else  if (color === 'red') {
+//         return 'Strawberries are ' + color;
+//     } else if(color == 'cyan'){
+//         return 'I don\'t know anything about ' + color;
+//     } else {
+//         return color + ' not a valid color';
+//     }
 // var result;
 //
 //     switch (color) {
@@ -70,7 +85,7 @@
 //             return color + 'not a valid color';
 //     }
 // }
-
+//
 // console.log(analyzeColor('blue'));
 // console.log(analyzeColor('red'));
 // console.log(analyzeColor('cyan'));
@@ -153,32 +168,32 @@
  * return value.
  */
 
-function calculateTotal(luckyNumber, total) {
-
-    var discountedPrice;
-
-    switch (luckyNumber) {
-        case 0:
-            discountedPrice = total;
-            break;
-        case 1:
-            discountedPrice = total * (0.9);
-            break;
-        case 2:
-            discountedPrice = total * (.75);
-            break;
-        case 3:
-            discountedPrice = total * (.65);
-            break;
-        case 4:
-            discountedPrice = total * (.5);
-            break;
-        default:
-            discountedPrice = 'Invalid lucky number';
-
-
-            return discountedPrice;
-    }
+// function calculateTotal(luckyNumber, total) {
+//
+//     var discountedPrice;
+//
+//     switch (luckyNumber) {
+//         case 0:
+//             discountedPrice = total;
+//             break;
+//         case 1:
+//             discountedPrice = total * (0.9);
+//             break;
+//         case 2:
+//             discountedPrice = total * (.75);
+//             break;
+//         case 3:
+//             discountedPrice = total * (.65);
+//             break;
+//         case 4:
+//             discountedPrice = total * (.5);
+//             break;
+//         default:
+//             discountedPrice = 'Invalid lucky number';
+//
+//
+//             return discountedPrice;
+//     }
 
 
     /**
@@ -188,14 +203,14 @@ function calculateTotal(luckyNumber, total) {
      * and alerts to display to the user what their lucky number was, what their
      * price before the discount was, and what their price after the discount is.
      */
-// Generate a random number between 0 and 6
-    var luckyNumber = Math.floor(Math.random() * 6);
-
-    console.log(luckyNumber);
-    console.log(calculateTotal(luckyNumber, 100));
-
-    luckyNumber = Math.floor(Math.random() * 6);
-    console.log(luckyNumber);
-    console.log(calculateTotal(luckyNumber, 200)); {
-    }
-}
+// // Generate a random number between 0 and 6
+//     var luckyNumber = Math.floor(Math.random() * 6);
+//
+//     console.log(luckyNumber);
+//     console.log(calculateTotal(luckyNumber, 100));
+//
+//     luckyNumber = Math.floor(Math.random() * 6);
+//     console.log(luckyNumber);
+//     console.log(calculateTotal(luckyNumber, 200)); {
+//     }
+// }
