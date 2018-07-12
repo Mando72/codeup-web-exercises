@@ -1,0 +1,45 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Weather Yo</title>
+
+    <link rel="stylesheet" href="css/weather.css">
+     <!--<link rel="stylesheet" href="css/bootstrap.css">  -->
+
+</head>
+
+<body>
+
+
+<div id="weatherBox">
+
+    <h2 class="text-center" id="city"></h2>
+
+    <select name="forecastOption" id="forecastLength" class="center-block">
+        <option value="3">3 day forecast</option>
+        <option value="4">4 day forecast</option>
+        <option value="5">5 day forecast</option>
+        <option value="7">7 day forecast</option>
+    </select>
+
+
+    <div id="ForecastDiv" >
+    </div>
+    <div class="searchBar">
+        <input type="text" id="searchWeather" placeholder="search by city..">
+        <br>
+        <button class="btn btn-info" id="searchBtn">Search</button>
+    </div>
+    <div id="map"></div>
+</div>
+
+
+ <!--<script src="js/weather.js"></script> -->
+<!--<script src="js/jQuery-2.2.4.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvGGiduHFnlohRyTubz_RvwUi46t0XOJU"></script>-->
+
+
+</body>
+</html>
