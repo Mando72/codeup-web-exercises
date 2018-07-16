@@ -99,12 +99,7 @@
         // PROBLEM 2 - create array of user objects based on the customers array
         // of objects (each user object should just have name and age properties)
 
-        let userObjects = customers.map(obj => {
-            let namAge = {};
-            namAge.name = obj.name;
-            namAge.age = obj.age;
-            return namAge;
-        });
+        const userObjects = customers.map( ({name, age}) => {return {name,age} })
         console.log('user objects', userObjects);
 
         // PROBLEM 3 - create an array of civil servant customers (teachers and police officers)
