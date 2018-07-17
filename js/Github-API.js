@@ -33,7 +33,6 @@ getLastCommitFrom('Mando72').then( (data) => {
 
 
 
-
 // const lastCommit = (username) => {
 //     const token = '3338b78f5407c02fed99cb8bb6afc544a5e1a88b';
 //
